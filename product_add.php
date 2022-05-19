@@ -11,5 +11,6 @@ if ($_POST['title']){
     $result = $conn->query("INSERT INTO products(title,type,price,colors,features,img_url)
                     VALUES ('".$_POST['title']."','".$_POST['type']."',".$_POST['price'].",'".$colors."','".$_POST['features']."','".$img_url."')");
 }
+<li><a href="product_add.php">Добавить продукт</a></li>
 require('components/product_form.php');
 require('components/footer.php');
