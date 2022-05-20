@@ -1,6 +1,7 @@
 <?php
 require('products_db.php');
 require('dbconnect.php');
+require('auth.php');
 $limit = 4;
 $page = intval($_GET['page']) ?: 1;
 $offset = ($page - 1) * $limit;
@@ -24,5 +25,5 @@ $today = $day . $months[$month] . $year;
 
 require('components/header.php');
 require('components/products_list.php');
-
+require ('components/message.php');
 require('components/footer.php');
