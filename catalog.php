@@ -1,8 +1,8 @@
 <?php
-require('products_db.php');
-require('dbconnect.php');
+//require('products_db.php');
 require('auth.php');
-$limit = 4;
+require('dbconnect.php');
+$limit = 6;
 $page = intval($_GET['page']) ?: 1;
 $offset = ($page - 1) * $limit;
 //Запрос для получения количества записей в таблице
