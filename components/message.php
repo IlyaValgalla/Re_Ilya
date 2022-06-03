@@ -1,5 +1,5 @@
 <div class="container">
-    <h1 >
+    <div >
         <p class="error">
             <?php
             if ($message){
@@ -11,5 +11,5 @@
             }
             ?>
         </p>
-    </h1>
+    </div>
 </div>
